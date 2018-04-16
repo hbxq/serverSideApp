@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/stores.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav stores-bar-nav">
+		    <h1 class="mui-title stores-title">我的店铺</h1>
+		</header>
+		<div class="stores_top" >
+			<img class="eaves" src="images/icon/eaves.png"/>
+			<div class="stores_detail">
+				<div class="detail_left">
+					<img src="images/icon/timg (2).jpg"/>
+				</div>
+				<div class="detail_content">
+					<i>恩施映像</i><br />
+					<i>人气1232</i>
+				</div>
+				<div class="detail_right">
+					<img src="images/icon/news.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="mui-content stores-centent">
+		    <div id="scan" class="box">
+		    	<img src="images/icon/scan.png"/>
+		    	<div class="box_title">扫码验证</div>
+		    	<div class="box_center">核销券码</div>
+		    </div>
+		    <div id="stores" class="box">
+		    	<img src="images/icon/stores.png"/>
+		    	<div class="box_title">店铺管理</div>
+		    	<div class="box_center">更改店铺信息、员工信息</div>
+		    </div>
+		    <div id="orders" class="box">
+		    	<img src="images/icon/orders.png"/>
+		    	<div class="box_title">订单数据</div>
+		    	<div class="box_center">核销记录、订单统计</div>
+		    </div>
+		    <div id="voucher" class="box">
+		    	<img src="images/icon/voucher.png"/>
+		    	<div class="box_title">享7券</div>
+		    	<div class="box_center">自定义满减额度</div>
+		    </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			const scan = document.getElementById("scan");
+			const stores = document.getElementById("stores");
+			const orders = document.getElementById("orders");
+			const voucher = document.getElementById("voucher");
+			function foo_1(){
+				console.log("foo_1foo_1")
+			};
+			//监听点击事件
+			scan.addEventListener("tap",function () {
+			  console.log("tap event scan");
+			});
+			stores.addEventListener("tap",function () {
+			  console.log("tap event stores");
+			});
+			orders.addEventListener("tap",function () {
+			  console.log("tap event orders");
+			});
+			voucher.addEventListener("tap",function () {
+			  console.log("tap event voucher");
+			});
+			//触发submit按钮的点击事件
+//			mui.trigger(btn,'tap');
+		</script>
+	</body>
+
+</html>
